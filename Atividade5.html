@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em JS</title>
+</head>
+<body>
+    
+    <script>
+
+        var lista = [1, 2, 3, 4, 5, -8]
+        var max = 0
+        var min = 9999999999999999999999
+
+        for (posicao in lista) {
+            if (lista[posicao] > max) {
+                max = lista[posicao]
+            }
+        }
+
+        for (posicao in lista) {
+            if (lista[posicao] < min) {
+                min = lista[posicao]
+            }
+        }
+
+        alert (max)
+        alert (min)
+
+    </script>
+
+</body>
+</html>

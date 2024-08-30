@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em JS</title>
+</head>
+<body>
+    
+    <script>
+
+        var lista1= [" Henrique ", " Tossatto ", " Correa "] 
+        var lista2 = [" Pedro ", " Henrique "]     
+        var lista3 = []
+
+        for (posicao1 in lista1) {
+            for (posicao2 in lista2){
+                if (lista1[posicao1] == lista2[posicao2]) {
+                    lista3.push (lista1[posicao1])
+                }
+            }
+        }
+    
+        alert(lista3)
+
+    </script>
+
+</body>
+</html>
